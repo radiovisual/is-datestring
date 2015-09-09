@@ -1,0 +1,32 @@
+{
+  "name": "is-datestring",
+  "version": "1.0.0",
+  "description": "Check if a string is a datetime string",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radiovisual/is-datestring.git"
+  },
+  "keywords": [
+    "is",
+    "time",
+    "string",
+    "date",
+    "verify",
+    "boolean",
+    "timestring",
+    "datestring"
+  ],
+  "author": "Michael Wuergler <senjudev@gmail.com> (http://numetriclabs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radiovisual/is-datestring/issues"
+  },
+  "homepage": "https://github.com/radiovisual/is-datestring#readme",
+  "devDependencies": {
+    "mocha": "^2.3.2"
+  }
+}
