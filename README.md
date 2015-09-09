@@ -1,4 +1,4 @@
-# is-datestring
+# is-datestring [![Build Status](https://travis-ci.org/radiovisual/is-datestring.svg)](https://travis-ci.org/radiovisual/is-datestring)
 > Check if a string is a datetime string
 
 ## Install
