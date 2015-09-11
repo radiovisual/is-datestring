@@ -19,7 +19,7 @@ module.exports = function(string){
     }
 
     // Match format: Friday, 1, 2015 06:00 AM
-    var regex3 = /^^(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day,\s(?:[1-9]{1}|1[0-9]{0,1}|2[0-9]{0,1}|3[01]{1}),\s[0-9]{4}\s[0-9]{2}:[0-9]{2}\s(?:AM|PM)/;
+    var regex3 = /^(?:Mon|Tues|Wednes|Thurs|Fri|Satur|Sun)day,\s(?:[1-9]{1}|1[0-9]{0,1}|2[0-9]{0,1}|3[01]{1}),\s[0-9]{4}\s[0-9]{2}:[0-9]{2}\s(?:AM|PM)/;
     if ( regex3.test(string) ){
         return true;
     }
