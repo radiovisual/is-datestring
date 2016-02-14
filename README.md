@@ -1,12 +1,17 @@
-# is-datestring [![Build Status](https://travis-ci.org/radiovisual/is-datestring.svg)](https://travis-ci.org/radiovisual/is-datestring)
+# is-datestring 
+
 > Check if a string is a datetime string
 
+[![Build Status](https://travis-ci.org/radiovisual/is-datestring.svg)](https://travis-ci.org/radiovisual/is-datestring)
+
 ## Install
-```sh
+
+```
 $ npm install --save is-datestring
 ```
 
 ## Usage
+
 ```js
 var isDateString = require('is-datestring');
 
@@ -24,7 +29,6 @@ isDateString('regularString');
 
 isDateString({});
 // => false
-
 ```
 
 ## Supported Formats
