@@ -7,11 +7,6 @@ test.createStream()
   .pipe(tapSpec())
   .pipe(process.stdout);
 
-test('Milliseconds', function (t) {
-  t.plan(1);
-  t.equal( isdate("100"), true);
-});
-
 test('ISO Date 2015-03-25', function (t) {
   t.plan(1);
   t.equal( isdate("2015-03-25"), true);
@@ -45,9 +40,11 @@ test('TMZ Datetime', function (t) {
 });
 
 test('should return false on non datestrings', function (t) {
-  t.plan(4);
+  t.plan(6);
   t.equal(isdate({}), false);
   t.equal( isdate(""), false);
   t.equal( isdate("Friday"), false);
   t.equal( isdate("foo"), false);
+  t.equal( isdate("foo 100"), false);
+  t.equal( isdate("100"), false);
 });
