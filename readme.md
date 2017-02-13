@@ -4,6 +4,11 @@
 
 [![Build Status](https://travis-ci.org/radiovisual/is-datestring.svg)](https://travis-ci.org/radiovisual/is-datestring)
 
+:boom: **Be aware of some [quirks](https://github.com/radiovisual/is-datestring/issues).
+Use at your own risk**. Pull requests welcome if you would like to
+help close [issues](https://github.com/radiovisual/is-datestring/issues) on this module.
+
+
 ## Install
 
 ```
@@ -50,6 +55,14 @@ Currently, this module considers the following formats to be **datestrings**:
 Other formats are likely to be supported, but this module only tests for the
 formats listed above. **Pull requests are welcome** if you would like to add test
 coverage for additional formats.
+
+## Known Issues
+
+- **Allows Strange Values:** This module uses JavaScript `Date()` constructor to
+help determine if a string is a valid datestring. Because of this, the module is
+suceptible to certain JavaScript quirks, and sometimes it lets some unassuming dateString values
+pass as valid datestrings. See [Issue #2](https://github.com/radiovisual/is-datestring/issues/2)
+for more information.
 
 ## License
 

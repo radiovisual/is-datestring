@@ -9,6 +9,11 @@ module.exports = function (input) {
     var dateString = date.toString();
     var validDate;
 
+    if (input === 'foo 100') {
+        console.log('date: ', date);
+        console.log('dateString', dateString);
+    }
+
     // Return false on Number values
     if (isNaN(input) === false) {
       return false;
