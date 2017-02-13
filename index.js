@@ -8,6 +8,11 @@ module.exports = function (input) {
     var date = new Date(input);
     var validDate;
 
+    // Return false on Number values
+    if (isNaN(input) === false) {
+      return false;
+    };
+
     // JavaScript Quirk: if the returned Date string
     // has two strings in it, then you likely gave the
     // Date constructor a strange value like new Date('foo 100')
