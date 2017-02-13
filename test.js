@@ -35,8 +35,9 @@ test('Long Date Time', function (t) {
 });
 
 test('TMZ Datetime', function (t) {
-  t.plan(1);
+  t.plan(2);
   t.equal( isdate("2016-12-30T08:00:00.000Z"), true);
+  t.equal( isdate("1995-12-17T03:24:00"), true);
 });
 
 test('should return false on non datestrings', function (t) {
